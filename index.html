@@ -1,13 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Bookshelf Apps</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
 
-   <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-   <script src="assets/js/script.js"></script>
-</body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="">BookShelf Apps</a>
+      <div class="header-line"></div>
+    </header>
+
+    <main>
+      <section id="input-section">
+        <h2>Masukkan Buku Baru</h2>
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Judul</label>
+            <input id="inputBookTitle" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Penulis</label>
+            <input id="inputBookAuthor" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputBookYear">Tahun</label>
+            <input id="inputBookYear" type="number" required />
+          </div>
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Selesai dibaca</label>
+            <input id="inputBookIsComplete" type="checkbox" />
+          </div>
+          <div id="formAction">
+            <button id="bookSubmit" type="submit">
+               Tambah Buku
+             </button>
+             <button id="cancel">
+               Cancel
+             </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="book-shelf" id="inCompleteBookshelfList">
+        <h2 id="title">Belum selesai dibaca</h2>
+
+        <div class="book-list">
+          <article class="book-item">
+            <h3>Book Title</h3>
+            <div class="horizontal-line"></div>
+            <img
+              class="book-item__image"
+              src="assets/images/people.svg"
+              alt="Image Book"
+            />
+            <p>Penulis: John Doe</p>
+            <p>Tahun: 2002</p>
+
+            <div class="action">
+              <button class="green">Selesai dibaca</button>
+            </div>
+            <button class="red">X</button>
+          </article>
+          <article class="book-item">
+            <h3>Book Title</h3>
+            <div class="horizontal-line"></div>
+            <img
+              class="book-item__image"
+              src="assets/images/people.svg"
+              alt="Image Book"
+            />
+            <p>Penulis: John Doe</p>
+            <p>Tahun: 2002</p>
+
+            <div class="action">
+              <button class="green">Selesai dibaca</button>
+            </div>
+            <button class="red">X</button>
+          </article>
+          <article class="book-item">
+            <h3>Book Title</h3>
+            <div class="horizontal-line"></div>
+            <img
+              class="book-item__image"
+              src="assets/images/people.svg"
+              alt="Image Book"
+            />
+            <p>Penulis: John Doe</p>
+            <p>Tahun: 2002</p>
+
+            <div class="action">
+              <button class="green">Selesai dibaca</button>
+            </div>
+            <button class="red">X</button>
+          </article>
+          <article class="book-item">
+            <h3>Book Title</h3>
+            <div class="horizontal-line"></div>
+            <img
+              class="book-item__image"
+              src="assets/images/people.svg"
+              alt="Image Book"
+            />
+            <p>Penulis: John Doe</p>
+            <p>Tahun: 2002</p>
+
+            <div class="action">
+              <button class="green">Selesai dibaca</button>
+            </div>
+            <button class="red">X</button>
+          </article>
+          <article class="book-item">
+            <h3>Book Title</h3>
+            <div class="horizontal-line"></div>
+            <img
+              class="book-item__image"
+              src="assets/images/people.svg"
+              alt="Image Book"
+            />
+            <p>Penulis: John Doe</p>
+            <p>Tahun: 2002</p>
+
+            <div class="action">
+              <button class="green">Selesai dibaca</button>
+            </div>
+            <button class="red">X</button>
+          </article>
+          <article class="book-item">
+            <h3>Book Title</h3>
+            <div class="horizontal-line"></div>
+            <img
+              class="book-item__image"
+              src="assets/images/people.svg"
+              alt="Image Book"
+            />
+            <p>Penulis: John Doe</p>
+            <p>Tahun: 2002</p>
+
+            <div class="action">
+              <button class="green">Selesai dibaca</button>
+            </div>
+            <button class="red">X</button>
+          </article>
+          <article class="book-item">
+            <h3>Book Title</h3>
+            <div class="horizontal-line"></div>
+            <img
+              class="book-item__image"
+              src="assets/images/people.svg"
+              alt="Image Book"
+            />
+            <p>Penulis: John Doe</p>
+            <p>Tahun: 2002</p>
+
+            <div class="action">
+              <button class="green">Selesai dibaca</button>
+            </div>
+            <button class="red">X</button>
+          </article>
+        </div>
+      </section>
+
+      <button id="add-book">+</button>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
