@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookshelf Apps</title>
-    <link rel="shortcut icon" href="assets/images/icon.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -14,6 +18,19 @@
     </header>
 
     <main>
+      <!-- START SECTION MAIN HEADER -->
+      <section class="main-header">
+        <h2 id="mainHeaderTitle">Belum selesai dibaca</h2>
+        <input
+          id="searchBookTitle"
+          onchange="onKeywordSearchChange()"
+          type="text"
+          placeholder="Search your book..."
+        />
+      </section>
+      <!-- END SECTION MAIN HEADER -->
+
+      <!-- START SECTION FORM INPUT ADD BOOK -->
       <section id="input-section">
         <h2>Masukkan Buku Baru</h2>
         <form id="inputBook">
@@ -39,24 +56,59 @@
           </div>
         </form>
       </section>
+      <!-- END  SECTION FORM INPUT ADD BOOK -->
 
-      <section class="main-header">
-        <h2 id="mainHeaderTitle">Belum selesai dibaca</h2>
-        <input id="searchBookTitle" onchange="onKeywordSearchChange()" type="text" placeholder="Search your book..." />
+      <!-- START SECTION FORM INPUT EDIT BOOK -->
+      <section id="editInputSection">
+        <h2>Update Buku</h2>
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Judul</label>
+            <input id="inputBookTitleEdit" type="text" />
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Penulis</label>
+            <input id="inputBookAuthorEdit" type="text" />
+          </div>
+          <div class="input">
+            <label for="inputBookYear">Tahun</label>
+            <input id="inputBookYearEdit" type="number" />
+          </div>
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Selesai dibaca</label>
+            <input id="inputBookIsCompleteEdit" type="checkbox" />
+          </div>
+          <div id="formAction">
+            <button id="btnEditBook">Update Buku</button>
+            <button id="cancel">Cancel</button>
+          </div>
+        </form>
       </section>
+      <!-- END SECTION FORM INPUT EDIT BOOK -->
 
+      <!-- START SECTION INCOMPLETED BOOKSHELF -->
       <section class="book-shelf">
         <div class="book-list" id="inCompleteBookshelfList"></div>
       </section>
+      <!-- END SECTION INCOMPLETED BOOKSHELF -->
+
       <h2 id="message">Buku Tidak Tersedia</h2>
+
+      <!-- START SECTION COMPLETED BOOKSHELF -->
       <section class="book-shelf">
         <div class="book-list" id="completeBookshelfList"></div>
       </section>
+      <!-- END SECTION COMPLETED BOOKSHELF -->
 
-      <button id="pageBooksShelf">C</button>
-      <!-- <button id="inCompleteBookShelfPage">I</button> -->
+      <!-- ACTION MAIN SECTION -->
+      <button id="pageBooksShelf"></button>
       <button id="add-book">+</button>
     </main>
-    <script src="assets/js/script.js" ></script>
+
+    <footer>
+      <div class="footer-line"></div>
+      <h3>Bookshelf Apps ©️ 2023 - React Developer</h3>
+    </footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
